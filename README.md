@@ -22,6 +22,18 @@ git push -u origin feature/my-change
 | 同步云端改动    | `git pull`          |
 | 推到 GitHub | `git push`          |
 
+## Pull Request 流程
+
+改东西不要直接动主线，按这个顺序：
+
+1. 从 `master` 开一条新分支，例如 `docs/workflow`
+2. 在分支上提交改动
+3. 在 GitHub 上发起 Pull Request（base: `master` ← head: `docs/workflow`）
+4. 检查 diff，确认无误后合并
+5. 合并后删掉这条分支
+
+> 一个人练手也建议走这套流程，它同时给了你「可回溯的改动说明」和「反悔的机会」。
+
 ## 分支约定
 
 - `master`：主线（本仓库建于 2018 年，沿用旧默认分支名）
