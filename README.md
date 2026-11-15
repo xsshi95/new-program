@@ -26,9 +26,9 @@ git push -u origin feature/my-change
 
 改东西不要直接动主线，按这个顺序：
 
-1. 从 `master` 开一条新分支，例如 `docs/workflow`
+1. 从 `main` 开一条新分支，例如 `docs/workflow`
 2. 在分支上提交改动
-3. 在 GitHub 上发起 Pull Request（base: `master` ← head: `docs/workflow`）
+3. 在 GitHub 上发起 Pull Request（base: `main` ← head: `docs/workflow`）
 4. 检查 diff，确认无误后合并
 5. 合并后删掉这条分支
 
@@ -36,8 +36,10 @@ git push -u origin feature/my-change
 
 ## 分支约定
 
-- `master`：主线（本仓库建于 2018 年，沿用旧默认分支名）
+- `main`：主线
 - `feature/*`：功能改动
 - `docs/*`：文档改动
+
+> 2026-11-15：默认分支由 `master` 重命名为 `main`，与现在 GitHub 新建仓库的默认命名保持一致。
 
 > 认证提示：GitHub 自 2021 年 8 月起不再接受账号密码推送，请使用个人访问令牌或 SSH 密钥。
